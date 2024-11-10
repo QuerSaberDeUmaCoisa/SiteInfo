@@ -1,0 +1,100 @@
+/* Estilos gerais */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-h {
+    background-color: rgb(37, 37, 39);
+    padding: 10px;
+    text-align: center;
+}
+
+#menu-h ul {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+
+.conteudo-contato {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.conteudo-contato h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.conteudo-contato p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 12px;
+    font-size: 1em;
+    color: #fff;
+    background-color: rgb(24, 139, 233);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(20, 117, 197);
+}
+
+@media (max-width: 600px) {
+    .conteudo-contato {
+        padding: 10px;
+    }
+
+    form {
+        gap: 10px;
+    }
+}

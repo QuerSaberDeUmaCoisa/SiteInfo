@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Menu */
+#menu-h {
+    background-color: rgb(37, 37, 39);
+    padding: 10px;
+    text-align: center;
+}
+
+#menu-h ul {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+/* Detalhes do Produto */
+.produto-detalhes {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produto-galeria {
+    flex: 1;
+    position: relative;
+}
+
+.produto-galeria img {
+    width: 100%;
+    border-radius: 8px;
+}
+.produto-galeria:hover{
+    box-shadow: #555;
+}
+.produto-galeria button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(24, 139, 233);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.produto-galeria button:hover {
+    background-color: rgb(19, 110, 186);
+}
+
+.produto-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.produto-info h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.produto-info h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.produto-info p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.produto-info h2 {
+    font-size: 28px;
+    color: rgb(24, 139, 233);
+    margin-bottom: 20px;
+}
+
+.botao-comprar {
+    background-color: rgb(24, 139, 233);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botao-comprar:hover {
+    background-color: rgb(19, 110, 186);
+}

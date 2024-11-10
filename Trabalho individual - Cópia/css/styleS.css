@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+.conteudo-servicos {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.conteudo-servicos h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.conteudo-servicos p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilo da tabela */
+.tabela-servicos {
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+.tabela-servicos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabela-servicos th, .tabela-servicos td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.tabela-servicos th {
+    background-color: rgb(24, 139, 233);
+    color: #FFF;
+    font-weight: bold;
+}
+
+.tabela-servicos td {
+    background-color: #FFF;
+    color: #333;
+}
+
+.tabela-servicos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabela-servicos tr:hover {
+    background-color: #f1f1f1;
+}
+
+#menu-h {
+    background-color: rgb(37, 37, 39);
+    padding: 10px;
+    text-align: center;
+}
+
+#menu-h ul {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+#menu-h ul li:last-child a {
+    float: right;
+    background-color: rgb(24, 139, 233);
+}

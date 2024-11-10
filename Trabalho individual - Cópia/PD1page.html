@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Logo.jpg" type="image/jpg">
+</head>
+<body>
+    <link rel="stylesheet" href="css/styleP.css">
+    <nav id="menu-h">
+        <ul>
+            <li><a href="index.html"><i class="bi bi-list"></i> Home</a></li>
+            <li><a href="Servicos.html">Serviços</a></li>
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="Contato.html">Contato</a></li>
+            <li><a href="#">Entrar</a></li>
+        </ul>
+    </nav>
+
+    <div class="produto-detalhes">
+
+        <div class="produto-galeria">
+            <img id="produto-imagem" src="img/Produtos/Produto1/img5.webp" alt="Produto">
+            <button onclick="proximaImagem()">Próxima Imagem</button>
+        </div>
+
+        <div class="produto-info">
+            <h1>Arctis Nova 1
+                Multi-Platform Premium Wired Gaming Headset
+            </h1>
+            <h3>Especificações</h3>
+            <p>Tipo de Microfone
+                ClearCast Gen 2 - Fully Retractable Boom
+                <br><br>
+                Padrão Polar do Microfone
+                Bidirectional Noise Cancelling
+                <br><br>
+                Resposta de Frequência do Microfone
+                100-10.000 Hz
+                <br><br>
+                Sensibilidade do Microfone
+                -38 dBV/Pa</p>
+            <h2>€ 69,99</h2>
+            <button class="botao-comprar">Comprar</button>
+        </div>
+    </div>
+
+    <script>
+        const imagens = ["img/Produtos/Produto1/img6.webp", "img/Produtos/Produto1/img3.webp", "img/Produtos/Produto1/img4.webp", "img/Produtos/Produto1/img5.webp"]; // Adicione caminhos das imagens aqui
+        let imagemIndex = 0;
+
+        function proximaImagem() {
+            imagemIndex = (imagemIndex + 1) % imagens.length;
+            document.getElementById("produto-imagem").src = imagens[imagemIndex];
+        }
+    </script>
+</body>
+</html>
